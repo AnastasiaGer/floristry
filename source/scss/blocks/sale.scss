@@ -1,0 +1,30 @@
+.sale__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale__content-info{
+  width: 50%;
+}
+
+.sale__title{
+  font-size: 30px;
+  line-height: 170%;
+
+  letter-spacing: 0.06em;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+  }
+}
+
+.sale__text{
+  font-size: 14px;
+  line-height: 170%;
+  text-transform: none;
+}

@@ -1,0 +1,22 @@
+.menu__title {
+  font-size: 20px;
+  line-height: 22px;
+
+  letter-spacing: 0.06em;
+}
+
+.menu__list-item {
+  font-size: 35px;
+  line-height: 39px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 0.09em;
+    color: #ffffff;
+  }
+}
