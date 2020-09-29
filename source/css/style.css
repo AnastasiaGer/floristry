@@ -17,13 +17,14 @@ html {
  *******************/
 body {
   min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-family: 'Forum', cursive;
   font-size: 12px;
   line-height: 13px;
   text-transform: uppercase;
-  background-color: #3B181E;
   color: #FFFFFF; }
 
 /****************************
@@ -462,3 +463,52 @@ html.fp-enabled,
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
+
+.wrapper {
+  background-color: #3B181E; }
+
+.header {
+  width: 1920px;
+  height: 1044px;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; }
+
+.header-logo {
+  width: 137px;
+  height: 47px; }
+
+.header__title {
+  font-size: 120px;
+  line-height: 132px;
+  text-align: center;
+  letter-spacing: 0.09em; }
+
+.menu__title {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em; }
+
+.menu__list-item {
+  font-size: 35px;
+  line-height: 39px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5); }
+  .menu__list-item:hover {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 0.09em;
+    color: #ffffff; }
+
+.catalog__title {
+  font-size: 220px;
+  line-height: 243px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.03); }
+
+.catalog__subtitle {
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.06em; }
