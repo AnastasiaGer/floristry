@@ -1,0 +1,20 @@
+@mixin absolute-top-left($top: 0, $left: 0, $width: 0, $height: 0) {
+  position: absolute;
+
+  top: $top;
+  left: $left;
+
+  width: $width;
+  height: $height;
+}
+
+@mixin absolute-top-right($top: 0, $right: 0, $width: 0, $height: 0) {
+  position: absolute;
+
+  top: $top;
+  right: $right;
+
+  width: $width;
+  height: $height;
+}
+
