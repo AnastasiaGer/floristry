@@ -76,22 +76,6 @@ li {
   margin: 0;
   padding: 0; }
 
-/*******************
- Forms and buttons
- *******************/
-input,
-textarea,
-select,
-button {
-  color: inherit;
-  font: inherit;
-  letter-spacing: inherit; }
-
-/* I usually expand input and textarea to full-width */
-input[type="text"],
-textarea {
-  width: 100%; }
-
 /***********************************
  Easy responsive for media elements
  ***********************************/
@@ -130,22 +114,6 @@ embed {
     -webkit-transition-duration: 0.01ms !important;
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
-
-/*******************
- * Screen-ready only class to hide content visually
- * Solution by Joe Watkins.
- * @see https://zellwk.com/blog/hide-content-accessibly/
- *******************/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  white-space: nowrap; }
 
 /* Slider */
 .slick-slider {
@@ -568,32 +536,42 @@ html.fp-enabled,
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
 
+.menu__title {
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  padding-left: 35px; }
+
 .menu__btn {
-  display: block;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 5;
+  display: inline-block; }
 
 .menu {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1; }
 
-.menu__list {
+.menu__list-wrapper {
   position: fixed;
+  width: 1920px;
+  height: 1044px;
+  text-align: center;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(28, 28, 28, 0.9);
-  z-index: -1;
+  margin: 0 auto;
+  background-color: #3b181e;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 90px;
-  padding-left: 24px;
+  padding-top: 95px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -607,7 +585,7 @@ html.fp-enabled,
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
   overflow: auto; }
-  .menu__list--active {
+  .menu__list-wrapper--active {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
 
@@ -665,7 +643,8 @@ html.fp-enabled,
 .menu__title {
   font-size: 20px;
   line-height: 22px;
-  letter-spacing: 0.06em; }
+  letter-spacing: 0.06em;
+  padding-left: 35px; }
 
 .menu__list-item {
   font-size: 35px;
