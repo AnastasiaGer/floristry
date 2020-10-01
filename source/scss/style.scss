@@ -1,10 +1,11 @@
 @import "variables";
+@import "global/libs";
 @import "mixins.scss";
 @import "global/fonts";
 @import "global/layout";
-@import "global/libs";
 
 @import "blocks/header";
+@import "blocks/catalog-header";
 @import "blocks/menu";
 @import "blocks/catalog";
 @import "blocks/sale";
