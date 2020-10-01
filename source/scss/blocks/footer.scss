@@ -1,8 +1,12 @@
+
 .footer__inner {
+  min-height: 120px;
+  padding: 20px 460px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer__list-item {
@@ -20,8 +24,14 @@
   flex-wrap: wrap;
 }
 
+.footer__list{
+  padding-top: 20px;
+
+}
+
 .footer__social {
   font-size: 0;
+  padding: 30px 335px;
 }
 
 .social-links__item {
@@ -30,10 +40,12 @@
   display: inline-block;
 
   margin: 0 3px;
+  margin-right: 20px;
   width: 25px;
   height: 25px;
 
   font-size: 0;
+
 
   &:hover {
     background-color: #669ec0;

@@ -1,4 +1,4 @@
-.catalog{
+.catalog {
   padding-top: 187px;
 }
 
@@ -8,7 +8,7 @@
   span {
     font-size: 220px;
     line-height: 243px;
-z-index: 4;
+    z-index: 4;
     letter-spacing: 0.06em;
 
     color: rgba(255, 255, 255, 0.03);
@@ -138,13 +138,14 @@ z-index: 4;
   display: none;
   background: #FFFFFF;
   font-size: 12px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 0.15em;
-text-transform: uppercase;
-padding: 16px 30px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  border: none;
+  padding: 16px 30px;
+  cursor: pointer;
 
-color: #010001;
+  color: #010001;
 }
 
 

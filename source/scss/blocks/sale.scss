@@ -1,5 +1,5 @@
 .sale__inner {
-  padding: 0 330px 0 373px;
+  padding: 0 330px 170px 373px;
 }
 
 .sale__content {
@@ -40,11 +40,20 @@
 .sale__btn {
   font-size: 11px;
   line-height: 12px;
-  /* identical to box height */
 
   letter-spacing: 0.15em;
   padding: 16px 30px;
   background: #010001;
   color: #FFFFFF;
   border: none;
+
+  &:hover {
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.15em;
+
+    color: #000000;
+    border: none;
+  }
 }

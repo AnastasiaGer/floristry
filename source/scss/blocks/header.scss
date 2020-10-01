@@ -7,11 +7,12 @@
   background-position: 0 0;
   background-size: cover;
   position: relative;
-  &:after{
+
+  &:after {
     position: absolute;
     content: '';
     width: 1920px;
-height: 75px;
+    height: 75px;
     bottom: -1px;
     left: 0;
     background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%);
@@ -38,7 +39,12 @@ height: 75px;
 
     &:hover {
       background-color: #fff;
-      color: #1C1C1C;
+      font-size: 12px;
+      line-height: 13px;
+      letter-spacing: 0.15em;
+
+      color: #000000;
+      border: none;
     }
   }
 }
@@ -81,18 +87,14 @@ height: 75px;
 
   font-size: 0;
 
+  fill: #fff;
+
   &:hover {
     background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #fff;
-  }
-
-  &:active .social-link__icon {
-    fill: #fff;
+    fill: #000;
   }
 }
+
 
 .header__social-icon {
   @include absolute-top-left(50%, 50%, 25px, 25px);
@@ -100,8 +102,13 @@ height: 75px;
   margin-top: -9px;
   margin-left: -9px;
 
-  fill: #ffffff;
+  &:hover {
+    path: #000;
+    fill: #000;
+  }
+
 }
+
 
 .header__link {
   font-size: 20px;
@@ -116,7 +123,7 @@ height: 75px;
   width: 0;
   white-space: nowrap;
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     background-image: url('../../img/arrow-down.svg');
