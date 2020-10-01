@@ -76,37 +76,29 @@
   font-size: 0;
 }
 
+
+
 .header__social-link {
   position: relative;
 
   display: inline-block;
 
-  margin: 10px 3px;
+  margin-bottom: 20px;
   width: 25px;
   height: 25px;
 
   font-size: 0;
-
-  fill: #fff;
-
-  &:hover {
-    background-color: #669ec0;
-    fill: #000;
-  }
 }
-
 
 .header__social-icon {
   @include absolute-top-left(50%, 50%, 25px, 25px);
 
-  margin-top: -9px;
-  margin-left: -9px;
-
+  margin-top: -13px;
+  margin-left: -13px;
   &:hover {
-    path: #000;
     fill: #000;
+    background-color: rgb(159, 79, 79);
   }
-
 }
 
 

@@ -507,14 +507,10 @@ html.fp-enabled,
 .header__social-link {
   position: relative;
   display: inline-block;
-  margin: 10px 3px;
+  margin-bottom: 20px;
   width: 25px;
   height: 25px;
-  font-size: 0;
-  fill: #fff; }
-  .header__social-link:hover {
-    background-color: #669ec0;
-    fill: #000; }
+  font-size: 0; }
 
 .header__social-icon {
   position: absolute;
@@ -522,11 +518,11 @@ html.fp-enabled,
   left: 50%;
   width: 25px;
   height: 25px;
-  margin-top: -9px;
-  margin-left: -9px; }
+  margin-top: -13px;
+  margin-left: -13px; }
   .header__social-icon:hover {
-    path: #000;
-    fill: #000; }
+    fill: #000;
+    background-color: #9f4f4f; }
 
 .header__link {
   font-size: 20px;
@@ -900,10 +896,6 @@ html.fp-enabled,
   font-size: 0; }
   .social-links__item:hover {
     background-color: #669ec0; }
-  .social-links__item:active {
-    background-color: #fff; }
-  .social-links__item:active .social-link__icon {
-    fill: #fff; }
 
 .social-links__icon {
   position: absolute;
