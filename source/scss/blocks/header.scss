@@ -1,11 +1,22 @@
 .header {
   width: 1920px;
-  height: 1044px;
+  height: 1025px;
 
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    width: 1920px;
+height: 75px;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(0deg, #3B181E 3.33%, rgba(59, 24, 30, 0) 100%);
+    background-repeat: no-repeat;
+  }
 
   &__inner {
     padding: 87px 90px 114px 95px;
