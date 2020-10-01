@@ -76,8 +76,6 @@
   font-size: 0;
 }
 
-
-
 .header__social-link {
   position: relative;
 
@@ -91,16 +89,17 @@
 }
 
 .header__social-icon {
+  display: inline-block;
   @include absolute-top-left(50%, 50%, 25px, 25px);
 
   margin-top: -13px;
   margin-left: -13px;
+  cursor: pointer;
+
   &:hover {
     fill: #000;
-    background-color: rgb(159, 79, 79);
   }
 }
-
 
 .header__link {
   font-size: 20px;

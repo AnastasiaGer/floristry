@@ -76,18 +76,6 @@ li {
   margin: 0;
   padding: 0; }
 
-/***********************************
- Easy responsive for media elements
- ***********************************/
-img,
-svg,
-iframe,
-video,
-object,
-embed {
-  display: block;
-  max-width: 100%; }
-
 /*******************
  The hidden attribute
  *******************/
@@ -100,20 +88,6 @@ embed {
  *******************/
 [tabindex="-1"] {
   outline: none !important; }
-
-/*******************
- Remove animations and transitions
- @see https://hankchizljaw.com/wrote/a-modern-css-reset/
- *******************/
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important; } }
 
 /* Slider */
 .slick-slider {
@@ -513,16 +487,17 @@ html.fp-enabled,
   font-size: 0; }
 
 .header__social-icon {
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 25px;
   height: 25px;
   margin-top: -13px;
-  margin-left: -13px; }
+  margin-left: -13px;
+  cursor: pointer; }
   .header__social-icon:hover {
-    fill: #000;
-    background-color: #9f4f4f; }
+    fill: #000; }
 
 .header__link {
   font-size: 20px;

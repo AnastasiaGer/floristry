@@ -75,18 +75,6 @@ li {
   padding: 0;
 }
 
-/***********************************
- Easy responsive for media elements
- ***********************************/
-img,
-svg,
-iframe,
-video,
-object,
-embed {
-  display: block;
-  max-width: 100%;
-}
 
 /*******************
  The hidden attribute
@@ -101,17 +89,4 @@ embed {
  *******************/
 [tabindex="-1"] {
   outline: none !important;
-}
-
-/*******************
- Remove animations and transitions
- @see https://hankchizljaw.com/wrote/a-modern-css-reset/
- *******************/
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
