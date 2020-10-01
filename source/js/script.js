@@ -1,4 +1,34 @@
 $(function () {
+  $('.menu__btn').on('click', function(){
+    $('.menu__btn').toggleClass('menu__btn--active');
+    $('.menu__list-wrapper').toggleClass('menu__list-wrapper--active');
+  });
+
+  $('.menu__list-link').on('click', function(){
+    $('.menu__btn').removeClass('menu__btn--active');
+    $('.menu__list-wrapper').removeClass('menu__list-wrapper--active');
+  });
+
+
+  // $('.catalog__list').slick({
+  //   infinite: true,
+  //   fade: true,
+  //   prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
+  //   nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
+  //   asNavFor: '.slider-dotshead'
+  // });
+
+  // $('.slider-dotshead').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 4,
+  //   asNavFor: '.header__slider',
+  //   responsive: [
+  //     {
+  //         breakpoint: 961,
+  //             settings: "unslick"
+  //     }
+  // ]
+  // });
   // $('.about__slider, .trip__slider').slick({
   //   slidesToShow: 1,
   //   slidesToScroll: 1,

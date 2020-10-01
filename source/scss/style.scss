@@ -1,72 +1,11 @@
-@import "global";
-@import "vars";
-@import "libs";
-@import "fonts";
+@import "variables";
+@import "mixins.scss";
+@import "global/fonts";
+@import "global/layout";
+@import "global/libs";
 
-
-.wrapper {
-  background-color: #3B181E;
-}
-
-.header {
-  width: 1920px;
-  height: 1044px;
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-}
-
-.header-logo {
-  width: 137px;
-  height: 47px;
-}
-
-.header__title {
-  font-size: 120px;
-  line-height: 132px;
-  text-align: center;
-  letter-spacing: 0.09em;
-}
-
-.menu__title {
-  font-size: 20px;
-  line-height: 22px;
-
-  letter-spacing: 0.06em;
-}
-
-.menu__list-item {
-  font-size: 35px;
-  line-height: 39px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 0.5);
-
-  &:hover {
-    font-size: 45px;
-    line-height: 50px;
-    letter-spacing: 0.09em;
-    color: #ffffff;
-  }
-}
-
-.catalog__title {
-  font-size: 220px;
-  line-height: 243px;
-
-  letter-spacing: 0.06em;
-
-  color: rgba(255, 255, 255, 0.03);
-
-}
-
-.catalog__subtitle {
-  font-size: 30px;
-  line-height: 33px;
-  letter-spacing: 0.06em;
-}
-
-
-@import "media";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/catalog";
+@import "blocks/sale";
+@import "blocks/footer";

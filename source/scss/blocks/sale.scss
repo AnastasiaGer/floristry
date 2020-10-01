@@ -1,0 +1,59 @@
+.sale__inner {
+  padding: 0 330px 170px 373px;
+}
+
+.sale__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale__content-info {
+  width: 352px;
+}
+
+.sale__title {
+  font-size: 30px;
+  line-height: 170%;
+
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 86px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+}
+
+.sale__text {
+  font-size: 14px;
+  line-height: 170%;
+  text-transform: none;
+  margin-bottom: 45px;
+}
+
+.sale__btn {
+  font-size: 11px;
+  line-height: 12px;
+
+  letter-spacing: 0.15em;
+  padding: 16px 30px;
+  background: #010001;
+  color: #FFFFFF;
+  border: none;
+
+  &:hover {
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.15em;
+
+    color: #000000;
+    border: none;
+  }
+}
