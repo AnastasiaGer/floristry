@@ -1,16 +1,18 @@
-.catalog__header-inner{
-  padding: 87px 90px 114px 95px;
+.catalog__header {
+  max-height: 1086px;
 }
 
-.catalog__wrapper{
-  display: flex;
-  justify-content: space-between;
-}
 
-.catalog__bg-img{
+.catalog__header-inner {
   width: 1086px;
   height: 1086px;
+  background-image: url('../../img/catalog-1/catalog-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
+  padding: 87px 90px 114px 95px;
+
   &:after {
     position: absolute;
     content: '';
@@ -23,44 +25,59 @@
     background-repeat: no-repeat;
     z-index: 5;
   }
+}
 
-  &__btn {
+.catalog__header-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 167px;
+}
+
+.header__btn {
+  font-size: 12px;
+  line-height: 13px;
+
+  letter-spacing: 0.15em;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #FFFFFF;
+  padding: 18px 30px;
+  box-sizing: border-box;
+  margin-right: 8px;
+
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: #fff;
     font-size: 12px;
     line-height: 13px;
-
     letter-spacing: 0.15em;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid #FFFFFF;
-    padding: 18px 30px;
-    box-sizing: border-box;
-    margin-right: 8px;
 
-    cursor: pointer;
-    transition: all .3s;
-
-    &:hover {
-      background-color: #fff;
-      font-size: 12px;
-      line-height: 13px;
-      letter-spacing: 0.15em;
-
-      color: #000000;
-      border: none;
-    }
+    color: #000000;
+    border: none;
   }
 }
 
-.catalog__header__title{
+.catalog__content{
+  width: 50%;
+  margin-left: 1086px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 114px;
+}
+
+.catalog__header__title {
   font-size: 50px;
   line-height: 55px;
   letter-spacing: 0.09em;
 }
 
-.catalog__header__text{
+.catalog__header__text {
   font-size: 18px;
-line-height: 150%;
-text-transform: none;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 150%;
+  text-transform: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__title-wrapper {
@@ -68,7 +85,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-.catalog__content{
+.catalog__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -102,6 +119,6 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .events__list-img {
   width: 123px;
-height: 123px;
-margin-right: 20px;
+  height: 123px;
+  margin-right: 20px;
 }
